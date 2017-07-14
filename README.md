@@ -3,7 +3,7 @@
 - `git clone https://github.com/abhirockzz/javaee8-jsonb-jpa.git` 
 - `mvn clean install` - this will produce `javaee8-jsonb-jpa.war` in `target` directory
 - `docker build -t <image_name> .` - this will create a Docker image
-- `docker run --rm -it -p 8080:8080 -p 4848:4848 -p 8181:8181 <image_name>`
+- `docker run --rm -it -e ADMIN_PASSWORD=<gf_admin_password_of_your_choice> -p 8080:8080 -p 4848:4848 -p 8181:8181 <image_name>`
 - what's the Docker host IP ? `docker-machine ip` (e.g. 192.168.99.100)
 
 ## Run it on Oracle Container Cloud
@@ -13,5 +13,4 @@
 ## Test it...
 
 - Fetch all employees `http://<HOST_IP>/javaee8-jsonb-jpa/`. You will get a JSON payload with all employees
-
 - Fetch an employee - `http://<HOST_IP>/javaee8-jsonb-jpa/abhirockzz@gmail.com`. You will see a JSON payload in as a response
