@@ -12,5 +12,5 @@
 
 ## Test it...
 
-- Fetch all employees `http://<HOST_IP>:8080/javaee8-jsonb-jpa/`. You will get a JSON payload with all employees
-- Fetch an employee - `http://<HOST_IP>:8080/javaee8-jsonb-jpa/abhirockzz@gmail.com`. You will see a JSON payload in as a response
+- Fetch all employees `http://<HOST_IP>:8080/javaee8-jsonb-jpa/employees/`. You will get a JSON payload with all employees
+- Fetch an employee - `http://<HOST_IP>:8080/javaee8-jsonb-jpa/employees/abhirockzz@gmail.com`. You will see a JSON payload in as a response
